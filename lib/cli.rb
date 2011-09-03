@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
-require 'ConradConfig'
+require 'conrad_config'
 require 'inotify'
 
   Thread.abort_on_exception = true
 
-  class ConradFilerApp
+  class CLI
 
     def initialize
       @file_data = Hash.new
@@ -91,5 +91,5 @@ require 'inotify'
     end
   end
 
-app = ConradFilerApp.new
+app = CLI.new
 app.run

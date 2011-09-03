@@ -1,9 +1,9 @@
 require 'rubygems'
 require 'parseconfig'
-require 'ConradWatchJob'
-require 'ConradIdType'
-require 'ConradRule'
-require 'ConradDB'
+require 'conrad_watch_job'
+require 'conrad_id_type'
+require 'conrad_rule'
+require 'conrad_db'
 require 'inotify'
 
   class ConradConfig
