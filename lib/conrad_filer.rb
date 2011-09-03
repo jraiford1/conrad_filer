@@ -1,3 +1,4 @@
+require 'conrad_filer/version'
 require 'conrad_filer/cli'
 require 'conrad_filer/conrad_config'
 require 'conrad_filer/conrad_db'

@@ -33,11 +33,11 @@ module ConradFiler
     ConradFiler::DB.register_table_definition("INSERT INTO RULE_ID_TYPES (RULE, ID_TYPE) VALUES ('RULE', 'ID_TYPE2')")
 
 
-    DEFAULT_CONFIG_FILENAME = '/etc/conrad-filer.conf'
-    #DEFAULT_DB_FILENAME = '/var/local/conrad-filer/conrad-filer.sdb'
-    DEFAULT_DB_FILENAME = 'conrad-filer.sdb'
-    #DEFAULT_LOG_FILENAME = '/var/local/conrad-filer/conrad-filer.log'
-    DEFAULT_LOG_FILENAME = 'conrad-filer.log'
+    DEFAULT_CONFIG_FILENAME = '/etc/conrad_filer.conf'
+    #DEFAULT_DB_FILENAME = '/var/local/conrad_filer/conrad_filer.sdb'
+    DEFAULT_DB_FILENAME = 'conrad_filer.sdb'
+    #DEFAULT_LOG_FILENAME = '/var/local/conrad_filer/conrad_filer.log'
+    DEFAULT_LOG_FILENAME = 'conrad_filer.log'
 
     def initialize(filename="")
       @cfg_filename = filename
