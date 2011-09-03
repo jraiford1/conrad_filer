@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'conrad_config'
+require 'conrad_filer/conrad_config'
 require 'inotify'
 
   Thread.abort_on_exception = true

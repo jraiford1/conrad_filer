@@ -1,4 +1,4 @@
-require 'conrad_db'
+require 'conrad_filer/conrad_db'
 require 'inotify'
 
   # A watch job describes directories to monitor and includes a bitmask describing which actions to monitor

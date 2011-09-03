@@ -1,4 +1,4 @@
-require 'conrad_db'
+require 'conrad_filer/conrad_db'
 
   class DirPollingJob
 

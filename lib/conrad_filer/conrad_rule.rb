@@ -1,4 +1,4 @@
-require 'conrad_db'
+require 'conrad_filer/conrad_db'
 require 'inotify'
 
   # A rule describes an action to perform on a file that matches one of its defined id types
