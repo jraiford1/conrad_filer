@@ -1,18 +1,20 @@
 #!/usr/bin/env ruby
-require 'conrad_filer/conrad_config'
+require 'conrad_filer/config'
 require 'inotify'
 
+module ConradFiler
+  
   Thread.abort_on_exception = true
 
   class CLI
 
-    def initialize
+    def initialize(argv)
       @file_data = Hash.new
       @file_changes = Hash.new
     end
 
     def run
-      @config = ConradConfig.new
+      @config = ConradFiler::Config.new
       @watch_jobs = @config.get_watch_jobs
       @id_types = @config.get_id_types
       @rules = @config.get_rules
@@ -91,5 +93,4 @@ require 'inotify'
     end
   end
 
-app = CLI.new
-app.run
+end

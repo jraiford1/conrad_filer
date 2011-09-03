@@ -1,8 +1,10 @@
-require 'conrad_filer/conrad_db'
+require 'conrad_filer/db'
 require 'inotify'
 
+module ConradFiler
+
   # A watch job describes directories to monitor and includes a bitmask describing which actions to monitor
-  class ConradWatchJob
+  class WatchJob
 
     def initialize(db, a_hash)
       @db_rec = a_hash
@@ -67,3 +69,4 @@ require 'inotify'
     #end
   end
 
+end

@@ -1,8 +1,10 @@
-require 'conrad_filer/conrad_db'
+require 'conrad_filer/db'
+
+module ConradFiler
 
   class DirPollingJob
 
-    ConradDB.register_table_definition("CREATE TABLE WATCH_LIST (DIRECTORY TEXT, GLOB TEXT, INC_SUBDIR TEXT, RECURSIVE TEXT)")
+    ConradFiler::DB.register_table_definition("CREATE TABLE WATCH_LIST (DIRECTORY TEXT, GLOB TEXT, INC_SUBDIR TEXT, RECURSIVE TEXT)")
 
     ## Class Methods ##
     
@@ -43,3 +45,4 @@ require 'conrad_filer/conrad_db'
     
   end
 
+end

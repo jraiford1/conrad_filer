@@ -1,8 +1,10 @@
-require 'conrad_filer/conrad_db'
+require 'conrad_filer/db'
 require 'inotify'
 
+module ConradFiler
+
   # A rule describes an action to perform on a file that matches one of its defined id types
-  class ConradRule
+  class Rule
 
     attr_accessor :db_rec
 
@@ -32,3 +34,4 @@ require 'inotify'
       puts "[ConradRule::on_watch_event] '#{pathname}' #{bitmask.as_array_of_symbols}"
     end
   end
+end

@@ -1,4 +1,7 @@
 
+
+module ConradFiler
+  
   class FileSystemEntry
   class DBDir
     puts "DBDir loading"
@@ -16,3 +19,4 @@
       @@classvar
     end  
   end
+end

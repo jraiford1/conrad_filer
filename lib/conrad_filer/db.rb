@@ -1,7 +1,9 @@
 include ObjectSpace
 require 'sqlite3'
 
-  class ConradDB
+module ConradFiler
+
+  class DB
    
     @@table_defs = Array.new
     @@table_defs << "CREATE TABLE DIR_INFO (DIR_NAME TEXT, DIR_HASH INTEGER, FULL_PATH TEXT)"
@@ -81,3 +83,5 @@ require 'sqlite3'
     end
  
   end
+
+end

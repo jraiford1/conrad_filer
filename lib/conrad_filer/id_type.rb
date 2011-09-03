@@ -1,7 +1,9 @@
-require 'conrad_filer/conrad_db'
+require 'conrad_filer/db'
+
+module ConradFiler
 
   # An ID Type describes files in a directory using a regular expression.  It is used by a rule to define which file types the rule applies to.
-  class ConradIdType
+  class IdType
 
     def initialize(db, a_hash)
       @db_rec = a_hash
@@ -26,3 +28,4 @@ require 'conrad_filer/conrad_db'
 
   end
 
+end
