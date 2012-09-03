@@ -1,0 +1,61 @@
+Rip
+- dvdbackup
+- cdparanoia
+
+Add File
+- File stat structure (inode)
+- Compute file silhouette
+- ?1 Previously added?
+- ?1N: Add db recs (file, inode, filepath)
+- ?1Y (same inode): Add db recs (point to file) (*inode, filepath)
+- ?1Y (same silhouette): Add to "full check" queue to check full md5sum and add db recs
+
+Identify
+- freedb
+- imdb
+- thetvdb
+
+Transcode
+- transcode
+- lame
+- oggenc
+
+Rename
+Move
+
+Tag
+
+Database
+
+Multiple Encodings
+Use file links
+
+/
+/Music
+/Videos
+/Videos/720p
+/Videos/1080p
+/Videos/Captivate
+/Videos/iPod
+/Videos/PSP
+
+/Videos/TV Shows
+/Videos/Movies
+/Videos/Videos
+
+Tables
+------
+One-to-many  symbol: --<=
+Many-to-many symbol: =><=
+
+Files --<= Inodes
+Inodes --<= Filepaths
+Filepaths --
+MediaFiles --<= Files
+FileGroups =><= Files
+
+Files:
+md5sum (delayed)
+FileSilhouette - md5sum(first_1k & last_1k)
+size
+
